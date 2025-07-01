@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Muhammad Umer Ali</title>
+    <meta name="description" content="Read Muhammad Umer Ali's insights on data analysis, automation, and technology trends. Expert tips and tutorials on Excel VBA, Power BI, Python, and more.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">MUA</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                        <a href="resume.html" class="nav-link">Resume</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-btn text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link active">Blog</a>
+                <a href="resume.html" class="mobile-nav-link">Resume</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Blog & Insights</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Sharing knowledge about data analysis, automation, and technology trends
+                </p>
+                
+                <!-- Tag Filter -->
+                <div class="flex flex-wrap justify-center gap-3 mt-8">
+                    <button class="tag-filter active" data-tag="all">All Posts</button>
+                    <button class="tag-filter" data-tag="automation">Automation</button>
+                    <button class="tag-filter" data-tag="data-science">Data Science</button>
+                    <button class="tag-filter" data-tag="motivation">Motivation</button>
+                    <button class="tag-filter" data-tag="tutorials">Tutorials</button>
+                    <button class="tag-filter" data-tag="tips">Tips & Tricks</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Featured Post</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <div class="h-64 md:h-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-6xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="blog-tag">Data Science</span>
+                            <span class="blog-tag">Power BI</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                            Building Interactive Dashboards: From Data to Insights
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Learn how to create compelling and interactive dashboards that transform raw data 
+                            into actionable business insights. This comprehensive guide covers best practices, 
+                            design principles, and advanced techniques for dashboard development.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span>January 15, 2025</span>
+                                <i class="fas fa-clock ml-4 mr-2"></i>
+                                <span>8 min read</span>
+                            </div>
+                            <a href="https://medium.com/@muhammad-umer-ali" class="btn-primary-sm">
+                                Read More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-card filter-post" data-tags="automation tutorials" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image bg-gradient-to-br from-green-400 to-green-600">
+                        <i class="fas fa-robot text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Automation</span>
+                            <span class="blog-tag">Tutorials</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            5 Excel VBA Automation Tricks That Will Save You Hours
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Discover powerful VBA automation techniques that can streamline your daily tasks 
+                            and boost productivity. From data processing to report generation...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Dec 28, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>6 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card filter-post" data-tags="data-science tips" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image bg-gradient-to-br from-purple-400 to-purple-600">
+                        <i class="fas fa-chart-bar text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Data Science</span>
+                            <span class="blog-tag">Tips</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            Power BI vs Excel: When to Use Which Tool
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            A comprehensive comparison of Power BI and Excel for data analysis tasks. 
+                            Learn the strengths and limitations of each tool...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Dec 20, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>10 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card filter-post" data-tags="motivation" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image bg-gradient-to-br from-yellow-400 to-yellow-600">
+                        <i class="fas fa-lightbulb text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Motivation</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            From Beginner to Expert: My Data Analysis Journey
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Personal insights and lessons learned during my journey from a complete beginner 
+                            to becoming a data analysis expert. Tips for aspiring analysts...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Dec 15, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>7 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card filter-post" data-tags="tutorials data-science" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image bg-gradient-to-br from-red-400 to-red-600">
+                        <i class="fab fa-python text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Tutorials</span>
+                            <span class="blog-tag">Data Science</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            Python for Data Analysis: Getting Started Guide
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            A beginner-friendly guide to using Python for data analysis. Learn pandas, 
+                            numpy, and matplotlib with practical examples and real-world applications...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Dec 10, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>12 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card filter-post" data-tags="automation tips" data-aos="fade-up" data-aos-delay="500">
+                    <div class="blog-image bg-gradient-to-br from-indigo-400 to-indigo-600">
+                        <i class="fas fa-cogs text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Automation</span>
+                            <span class="blog-tag">Tips</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            Power Automate Best Practices for Business Workflows
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Essential best practices for creating robust and maintainable Power Automate 
+                            workflows. Error handling, performance optimization, and security considerations...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Dec 5, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>9 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card filter-post" data-tags="data-science tutorials" data-aos="fade-up" data-aos-delay="600">
+                    <div class="blog-image bg-gradient-to-br from-teal-400 to-teal-600">
+                        <i class="fas fa-database text-white text-3xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="blog-tag">Data Science</span>
+                            <span class="blog-tag">Tutorials</span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                            SQL Optimization Techniques for Large Datasets
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Advanced SQL optimization strategies to improve query performance when working 
+                            with large datasets. Indexing, partitioning, and query restructuring techniques...
+                        </p>
+                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <span><i class="fas fa-calendar mr-1"></i>Nov 30, 2024</span>
+                            <span><i class="fas fa-clock mr-1"></i>11 min read</span>
+                        </div>
+                        <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                            Read on Medium <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Get the latest insights on data analysis, automation, and technology trends delivered to your inbox.
+            </p>
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" 
+                           class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button class="btn-primary px-6 py-3">
+                        <i class="fas fa-paper-plane mr-2"></i>Subscribe
+                    </button>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">
+                    Follow me on <a href="https://medium.com/@muhammad-umer-ali" class="text-blue-600 hover:underline">Medium</a> 
+                    for regular updates and detailed tutorials.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Muhammad Umer Ali</h3>
+                <p class="text-gray-400 mb-6">Data Analyst & Automation Expert</p>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="mailto:umer@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/muhammad-umer-ali" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/muhammad-umer-ali" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://medium.com/@muhammad-umer-ali" class="social-link">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <p class="text-gray-500 text-sm">
+                    © 2025 Muhammad Umer Ali. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
